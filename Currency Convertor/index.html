@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CURRENCY CONEVRSION :- convert any currency</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="currency.js">
+</head>
+<body>
+    <nav>
+        <div class="logo">currencyConvetor</div>
+        <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/knowmore">Know more</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h2>Choose the currency for conersion</h2>
+        <form action="/action.php" method ="get">
+            <label for="quantity1">Enter quantity: </label>
+            <input type="number" name="amount" min ="2" max ="10">
+            <label for="Currency1">Enter currency: </label>
+            <select name="Currency1">
+                <option value="INR">Indian Rupees</option>
+                <option value="CAD">Canadian Dollars</option>
+                <option value="USD">US Dollars</option>
+                <option value="Euro">euro</option>
+                <option value="Yen">Japanese Yen</option>
+            </select>
+            <button class="btn"type="submit">Convert</button>
+        </form>
+        <div class="result">
+            <h2>Below is the converted table</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>CURRENCY</th>
+                        <th>CURRENCY VALUE</th>
+                        <th>VALUE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <footer>
+        Copyright &copy; All rights reserved. 
+    </footer>
+    <script src="currency.js">
+    </script>
+</body>
+</html>
